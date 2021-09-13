@@ -52,6 +52,7 @@ public class CompraDao implements ICompraDao {
 		sql.append("AND com.codigo = ?");
 		
 		PreparedStatement ps = c.prepareStatement(sql.toString());
+		ps.setInt(1, com.getCodigo());
 		ResultSet rs = ps.executeQuery();
 		while (rs.next()) {
 			Compra compra = new Compra();
