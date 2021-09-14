@@ -79,7 +79,7 @@ AS
 		BEGIN
 			IF (UPPER(@cod) = 'D')
 			BEGIN
-				DELETE cliente 
+				DELETE produto 
 				WHERE id = @id
 				SET @saida = 'Produto excluído com sucesso'
 			END
