@@ -71,7 +71,7 @@ public class ProdutoServlet extends HttpServlet {
 			request.setAttribute("erro", erro);
 			request.setAttribute("produto", produto);
 			request.setAttribute("listaProdutos", listaProdutos);
-			RequestDispatcher rd = request.getRequestDispatcher("Produto.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("produto.jsp");
 			rd.forward(request, response);
 		}
 	}
